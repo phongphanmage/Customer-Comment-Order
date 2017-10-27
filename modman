@@ -1,0 +1,4 @@
+app/etc/modules/Fram_Clientcommentorder.xml app/etc/modules/Fram_Clientcommentorder.xml
+app/code/community/Fram/Clientcommentorder  app/code/community/Fram/Clientcommentorder
+app/design/frontend/base/default/template/clientordercomment app/design/frontend/base/default/template/clientordercomment
+

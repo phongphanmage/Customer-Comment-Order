@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Fram_Clientcommentorder>
+            <version>0.1.0</version>
+        </Fram_Clientcommentorder>
+    </modules>
+    <global>
+        <models>
+            <clientcommentorder>
+                <class>Fram_Clientcommentorder_Model</class>
+                <resourceModel>fram_clientcommentorder_resource</resourceModel>
+            </clientcommentorder>
+        </models>
+        <resources>
+            <clientcommentorder_setup>
+                <setup>
+                    <module>Fram_Clientcommentorder</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </clientcommentorder_setup>
+        </resources>
+        <blocks>
+            <clientcommentorder>
+                <class>Fram_Clientcommentorder_Block</class>
+            </clientcommentorder>
+            <checkout>
+                <rewrite>
+                    <agreements>Fram_Clientcommentorder_Block_Checkout_Agreements</agreements>
+                    <onepage_billing>Fram_Clientcommentorder_Block_Checkout_Onepage_Billing</onepage_billing>
+                </rewrite>
+            </checkout>
+        </blocks>
+        <helpers>
+            <clientcommentorder>
+                <class>Fram_Clientcommentorder_Helper</class>
+            </clientcommentorder>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <checkout_submit_all_after>
+                <observers>
+                    <fram_clientcommentorder>
+                        <type>model</type>
+                        <class>Fram_Clientcommentorder_Model_Observer</class>
+                        <method>checkoutTypeOnepageSaveOrder</method>
+                    </fram_clientcommentorder>
+                </observers>
+            </checkout_submit_all_after>
+            <controller_action_predispatch_checkout_onepage_saveBilling>
+                <observers>
+                    <fram_clientcommentorder>
+                        <type>model</type>
+                        <class>Fram_Clientcommentorder_Model_Observer</class>
+                        <method>hookSaveBillingCheckout</method>
+                    </fram_clientcommentorder>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_saveBilling>
+
+
+        </events>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <clientcommentorder after="Mage_Adminhtml">Fram_Clientcommentorder</clientcommentorder>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

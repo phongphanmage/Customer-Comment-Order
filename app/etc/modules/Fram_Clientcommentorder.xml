@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Fram_Clientcommentorder>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Fram_Clientcommentorder>
+    </modules>
+</config>
