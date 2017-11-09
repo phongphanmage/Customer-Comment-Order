@@ -8,7 +8,7 @@
 						<children>
 							<config>
 								<children>
-									<fram_clientordercomment translate="title" module="clientordercomment">
+									<fram_clientordercomment translate="title" module="clientcommentorder">
 										<title>Fram - Client Order Comment</title>
 										<sort_order>5</sort_order>
 									</fram_clientordercomment>
