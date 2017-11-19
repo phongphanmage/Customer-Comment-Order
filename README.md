@@ -23,7 +23,7 @@
 
 ## Note
 
-- If you need enable this module , it will rewrite Checkout_Billing , Checkout_Agreements template .
+- If you need enable this module , it will rewrite Checkout_Billing
 
 - Perhaps you need to update css of your theme to make it pretty on frontend .
 
