@@ -22,9 +22,5 @@ class Fram_Clientcommentorder_Helper_Data extends Mage_Core_Helper_Abstract
     {
         return Mage::getStoreConfig('fram_clientordercomment/config/enable_billing',$this->storeId);
     }
-
-    public function _showInTotalField()
-    {
-        return Mage::getStoreConfig('fram_clientordercomment/config/enable_review',$this->storeId);
-    }
+    
 }

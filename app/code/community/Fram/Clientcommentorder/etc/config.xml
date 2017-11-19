@@ -26,7 +26,6 @@
             </clientcommentorder>
             <checkout>
                 <rewrite>
-                    <agreements>Fram_Clientcommentorder_Block_Checkout_Agreements</agreements>
                     <onepage_billing>Fram_Clientcommentorder_Block_Checkout_Onepage_Billing</onepage_billing>
                 </rewrite>
             </checkout>
